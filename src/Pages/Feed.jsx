@@ -8,7 +8,7 @@ const Feed = ({home,bgColorr}) => {
 
   const {id} = useParams();
   const homes = home.find(item => (item.id) == id);
-  
+
   useEffect(() => {
     document.title = `ziza - ${homes.category}`
  }, []);

@@ -97,12 +97,12 @@ function App() {
     <main className="App flex sm:flex-row overflow-auto flex-col w-full h-screen" style={{backgroundColor:bgColor,color:textColor}}>
     <Nav theme={theme} themeToggler={themeToggler} bgColorr={bgColorr}/>
     <Routes>
-      <Route path="/" exact element={<Home home={home} themeColor={themeColor} bgColorr={bgColorr}/>}/>
+      <Route path="/" element={<Home home={home} themeColor={themeColor} bgColorr={bgColorr}/>}/>
       <Route path="/about" element={<About />}/>
       <Route path="/achivements" element={<Achivements home={home} themeColor={themeColor} bgColorr={bgColorr}/>}/>
       <Route path="/links" element={<Links />}/>
       <Route path="/projects" element={<Projects home={home} themeColor=  {themeColor} bgColorr={bgColorr}/>}/>
-      <Route path="/:id" element={<Feed home={home} bgColorr={bgColorr}/>}/>
+      <Route path=":id" element={<Feed home={home} bgColorr={bgColorr}/>}/>
       <Route path="/resume" element={<Resume />}/>
       <Route path= "/contact" element={<Contact />}/>
       <Route path="*" element={<Missing />}/>
