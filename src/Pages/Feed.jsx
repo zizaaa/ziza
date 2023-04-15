@@ -1,14 +1,14 @@
 import React from 'react'
-import { useParams,Link } from 'react-router-dom'
 import { useEffect } from 'react';
 import './styles/feed.css';
 import { MdDateRange } from 'react-icons/md'
+import { useParams,Link } from 'react-router-dom'
 
 const Feed = ({home,bgColorr}) => {
 
   const {id} = useParams();
-  const homes = home.find(singleItem => (singleItem.id) === id);
-
+  const homes = home.find(item => (item.id) == id);
+  
   useEffect(() => {
     document.title = `ziza - ${homes.category}`
  }, []);
