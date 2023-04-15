@@ -12,12 +12,12 @@ const Feed = ({home,bgColorr}) => {
 <main className={`flex flex-col flex-1 sm:overflow-auto px-10 sm:py-10 pb-10 z-20`}>
 
   <div className='homeContainer w-full '>
-      <div key={homes.id} className='rounded-lg p-10 flex flex-col justify-evenly mb-10 drop-shadow-lg break-all' style={{backgroundColor:bgColorr}}>
+      <div key={homes.id} className='rounded-lg p-5 flex flex-col justify-evenly mb-10 drop-shadow-lg break-all' style={{backgroundColor:bgColorr}}>
           
         <div className='title mb-10'>
           <h2 className='text-[50px]'>{homes.title}</h2>
           <div className='flex mt-3'>
-          
+          {console.log(homes.titles)}
           <div className='flex md:flex-row flex-col'>
           <div>
             <Link to={`/${homes.category}`} className={`link relative backdrop:mr-3 rounded-full mr-2`}>#{homes.category}<span className='linkText bg'></span></Link>
