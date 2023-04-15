@@ -1,9 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { SiJavascript,SiReact,SiTailwindcss,SiNodedotjs,SiHtml5,SiCss3,SiMongodb,SiExpress } from 'react-icons/si';
+import { useEffect } from 'react';
 
 const Home = ({home,bgColorr,themeColor}) => {
   
+  useEffect(() => {
+    document.title = "ziza - Home"
+ }, []);
+
   return (
     <main className='flex flex-1 sm:overflow-auto px-10 sm:py-10 pb-10 z-20' style={{backgroundColor:themeColor}}>
       <div className='homeContainer md:w-2/3 w-full'>

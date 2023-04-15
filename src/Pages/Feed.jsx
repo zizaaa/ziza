@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams,Link } from 'react-router-dom'
+import { useEffect } from 'react';
 import './styles/feed.css';
 import { MdDateRange } from 'react-icons/md'
 
@@ -7,6 +8,10 @@ const Feed = ({home,bgColorr}) => {
 
   const {id} = useParams();
   const homes = home.find(singleItem => (singleItem.id).toString() === id);
+
+  useEffect(() => {
+    document.title = `ziza - ${homes.category}`
+ }, []);
 
   return (
 <main className={`flex flex-col flex-1 sm:overflow-auto px-10 sm:py-10 pb-10 z-20`}>
