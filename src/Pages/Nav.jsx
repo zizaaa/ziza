@@ -20,13 +20,13 @@ const Nav = ({theme,themeToggler}) => {
         themeColor = "rgb(245,245,250)"
         textColor = "rgb(82,100,119)";
       }else{
-        themeColor = "rgb(48,48,48)"
+        themeColor = "rgb(66,66,66)"
         textColor = "rgb(195,195,195)";
       }
 
     const handleOpen=()=>{
         setOpener(()=>opener ? "" : "open");
-        setNum(()=> num ? 0 : 290);
+        setNum(()=> num ? 0 : 250);
     }
 
 
@@ -77,7 +77,7 @@ const Nav = ({theme,themeToggler}) => {
             <span className='hamburger-bottom'></span>
         </button>
         </div>
-        <div className={`flex-col overflow-hidden  text-lg bg-[${themeColor}] drop-shadow-lg mt-6 p-5 gap-3 flex absolute left-10 right-10 top-[300px] sm:hidden`}>
+        <div className={`flex-col overflow-hidden  text-lg drop-shadow-lg mt-6 p-5 gap-3 flex absolute left-10 right-10 top-[300px] sm:hidden`} style={{backgroundColor:themeColor}}>
         <Link to='/' className='flex items-center'><span className='mr-5'><AiOutlineHome /></span> Home</Link>
             <Link to='/about' className='flex items-center'><span className='mr-5'><AiOutlineUser /></span> About</Link>
             {/* <Link to='/achivements' className='flex items-center'><span className='mr-5'><BiMedal /></span> Achivements</Link> */}

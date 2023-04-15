@@ -22,7 +22,6 @@ const Feed = ({home,bgColorr}) => {
         <div className='title mb-10'>
           <h2 className='text-[50px]'>{homes.title}</h2>
           <div className='flex mt-3'>
-          {console.log(homes.titles)}
           <div className='flex md:flex-row flex-col'>
           <div>
             <Link to={`/${homes.category}`} className={`link relative backdrop:mr-3 rounded-full mr-2`}>#{homes.category}<span className='linkText bg'></span></Link>
