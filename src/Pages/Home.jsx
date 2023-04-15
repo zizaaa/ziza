@@ -76,8 +76,8 @@ const Home = ({home,bgColorr,themeColor}) => {
                       <h2 className='uppercase font-semibold mb-5'>Categories</h2>
                     </div>
                     <div className='flex gap-3 flex-wrap'>
-                      <Link to="/projects" className={`bg-[${bgColorr}] px-3 rounded-full drop-shadow-md`}>#Projects</Link>
-                      <Link to="/achivements" className={`bg-[${bgColorr}] px-3 rounded-full drop-shadow-md`}>#Achievements</Link>
+                      <Link to="/projects" className={`px-3 rounded-full drop-shadow-md`} style={{backgroundColor:bgColorr}}>#Projects</Link>
+                      <Link to="/achivements" className={`px-3 rounded-full drop-shadow-md`} style={{backgroundColor:bgColorr}}>#Achievements</Link>
                     </div>
                   </div>
       </div>

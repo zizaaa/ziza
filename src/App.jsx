@@ -95,7 +95,7 @@ function App() {
 
   return (
     <main className="App flex sm:flex-row overflow-auto flex-col w-full h-screen" style={{backgroundColor:bgColor,color:textColor}}>
-    <Nav theme={theme} themeToggler={themeToggler}/>
+    <Nav theme={theme} themeToggler={themeToggler} bgColorr={bgColorr}/>
     <Routes>
       <Route path="/" element={<Home home={home} themeColor={themeColor} bgColorr={bgColorr}/>}/>
       <Route path="/about" element={<About />}/>

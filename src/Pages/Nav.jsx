@@ -2,37 +2,27 @@ import React from 'react';
 import { FiGithub,FiFacebook } from 'react-icons/fi';
 import { TbBrandDiscord } from 'react-icons/tb';
 import { TfiTwitter } from 'react-icons/tfi';
-import { BiMedal } from 'react-icons/bi';
+// import { BiMedal } from 'react-icons/bi';
 import { AiOutlineProject, AiOutlineHome,AiOutlineUser,AiOutlineContacts } from 'react-icons/ai';
-import { RiFilePaper2Line } from 'react-icons/ri';
+// import { RiFilePaper2Line } from 'react-icons/ri';
 import { BsLink45Deg, BsMoonStars,BsSun } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import './styles/nav.css';
 import { useState } from 'react';
 
-const Nav = ({theme,themeToggler}) => {
+const Nav = ({theme,themeToggler,bgColorr}) => {
     const [opener, setOpener] = useState("");
     const [num, setNum] = useState(0);
 
-    let themeColor;
-    let textColor;
-    if(theme){
-        themeColor = "rgb(245,245,250)"
-        textColor = "rgb(82,100,119)";
-      }else{
-        themeColor = "rgb(66,66,66)"
-        textColor = "rgb(195,195,195)";
-      }
-
     const handleOpen=()=>{
         setOpener(()=>opener ? "" : "open");
-        setNum(()=> num ? 0 : 250);
+        setNum(()=> num ? 0 : '250px');
     }
 
 
   return (
     <nav className=' relative px-10 pt-10 pb-5 flex flex-col justify-between sm:w-72 w-full'>
-        <div className={`menu sm:pb-0 pb-[${num}px]`}>
+        <div className={`sm:pb-[0px] menu`} style={{paddingBottom:num}}>
             <div className='imgContainer'>
                 <img src="./src/img/profile4.png" alt="profile" className='drop-shadow-xl'/>
             </div>
@@ -77,7 +67,8 @@ const Nav = ({theme,themeToggler}) => {
             <span className='hamburger-bottom'></span>
         </button>
         </div>
-        <div className={`flex-col overflow-hidden  text-lg drop-shadow-lg mt-6 p-5 gap-3 flex absolute left-10 right-10 top-[300px] sm:hidden`} style={{backgroundColor:themeColor}}>
+        <div className={`flex-col overflow-hidden  text-lg drop-shadow-lg mt-6 p-5 gap-3 flex absolute left-10 right-10 top-[300px] sm:hidden`} style={{backgroundColor:bgColorr}}>
+        
         <Link to='/' className='flex items-center'><span className='mr-5'><AiOutlineHome /></span> Home</Link>
             <Link to='/about' className='flex items-center'><span className='mr-5'><AiOutlineUser /></span> About</Link>
             {/* <Link to='/achivements' className='flex items-center'><span className='mr-5'><BiMedal /></span> Achivements</Link> */}
