@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import './styles/feed.css';
 import { MdDateRange } from 'react-icons/md'
-import { useParams,Link } from 'react-router-dom'
+import { useParams,Link} from 'react-router-dom'
 
 const Feed = ({home,bgColorr}) => {
 
