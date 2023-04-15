@@ -102,7 +102,7 @@ function App() {
       <Route path="/achivements" element={<Achivements home={home} themeColor={themeColor} bgColorr={bgColorr}/>}/>
       <Route path="/links" element={<Links />}/>
       <Route path="/projects" element={<Projects home={home} themeColor=  {themeColor} bgColorr={bgColorr}/>}/>
-      <Route path=":id" element={<Feed home={home} bgColorr={bgColorr}/>}/>
+      {/* <Route path=":id" element={<Feed home={home} bgColorr={bgColorr}/>}/> */}
       <Route path="/resume" element={<Resume />}/>
       <Route path= "/contact" element={<Contact />}/>
       <Route path="*" element={<Missing />}/>

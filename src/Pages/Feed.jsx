@@ -7,7 +7,7 @@ import { MdDateRange } from 'react-icons/md'
 const Feed = ({home,bgColorr}) => {
 
   const {id} = useParams();
-  const homes = home.find(singleItem => (singleItem.id).toString() === id);
+  const homes = home.find(singleItem => (singleItem.id) === id);
 
   useEffect(() => {
     document.title = `ziza - ${homes.category}`
