@@ -34,7 +34,7 @@ const Nav = ({theme,themeToggler}) => {
     <nav className=' relative px-10 pt-10 pb-5 flex flex-col justify-between sm:w-72 w-full'>
         <div className={`menu sm:pb-0 pb-[${num}px]`}>
             <div className='imgContainer'>
-                <img src="./src/assets/profile4.png" alt="profile" className='drop-shadow-xl'/>
+                <img src="./src/img/profile4.png" alt="profile" className='drop-shadow-xl'/>
             </div>
             <div className='textContainer mb-5'>
                 <p className='text-md mb-3 font-bold tracking-widest'>ziza</p>
