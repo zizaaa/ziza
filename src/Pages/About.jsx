@@ -4,7 +4,7 @@ import { MdDateRange } from 'react-icons/md'
 
 const About = ({bgColorr,themeColor}) => {
   return (
-    <main className='flex flex-col flex-1 sm:overflow-auto sm:px-5 px-0 sm:py-10 pb-10 z-10' style={{backgroundColor:themeColor}}>
+    <main className='flex flex-col flex-1 sm:overflow-auto sm:px-5 px-3 sm:py-10 pb-10 z-10' style={{backgroundColor:themeColor}}>
       <div className='w-full p-10 drop-shadow-lg rounded-lg' style={{backgroundColor:bgColorr}}>
         <div>
         <div className='mb-10'>

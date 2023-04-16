@@ -11,7 +11,7 @@ const Home = ({home,bgColorr,themeColor}) => {
  }, []);
 
   return (
-    <main className='flex sm:flex-1 sm:px-3 px-10 py-10 pb-10 z-20' style={{backgroundColor:themeColor}}>
+    <main className='flex sm:flex-1 sm:px-3 px-2 py-10 pb-10 z-20' style={{backgroundColor:themeColor}}>
       <div className='homeContainer md:w-2/3 w-full sm:overflow-auto'>
         {home.map((item)=> (
           <Link to={`${item.id}`} key={item.id} className='rounded-lg min-h-[130px] p-5 flex flex-col justify-evenly mb-10 drop-shadow-lg overflow-hidden' style={{backgroundColor:bgColorr}}>

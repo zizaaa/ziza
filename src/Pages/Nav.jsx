@@ -23,14 +23,14 @@ const Nav = ({theme,themeToggler,bgColorr}) => {
 
 
   return (
-    <nav className=' relative pt-10 pb-5 pl-10 sm:pr-0 pr-10  flex flex-col justify-between sm:w-72 w-full'>
+    <nav className=' relative pt-10 pb-5 sm:pl-10 pl-3 sm:pr-0 pr-3  flex flex-col justify-between sm:w-72 w-full'>
         <div className='menu' style={{paddingBottom:num}}>
             <div className='imgContainer sm:mb-5'>
                 <img src={profile} alt="profile" className='drop-shadow-xl w-48'/>
             </div>
             <div className='textContainer mb-5'>
                 <p className='text-md mb-3 font-bold tracking-widest'>Ziza</p>
-                <p className=' text-sm'>A curious person with an Interest and Knowledge in computers.</p>
+                <p className=' text-sm'>A curious person with an interest and knowledge in computers.</p>
             </div>
             <div className='socialContainer flex gap-5 text-lg sm:mb-5'>
                 <a href="https://github.com/zizaaa"><FiGithub/></a>
