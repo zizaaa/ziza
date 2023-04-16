@@ -21,7 +21,7 @@ const Nav = ({theme,themeToggler,bgColorr}) => {
 
 
   return (
-    <nav className=' relative px-10 pt-10 pb-5 flex flex-col justify-between sm:w-72 w-full'>
+    <nav className=' relative pt-10 pb-5 pl-10 sm:pr-0 pr-10  flex flex-col justify-between sm:w-72 w-full'>
         <div className={`sm:pb-[0px] menu`} style={{paddingBottom:num}}>
             <div className='imgContainer'>
                 <img src="./src/img/profile4.png" alt="profile" className='drop-shadow-xl'/>

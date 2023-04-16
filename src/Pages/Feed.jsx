@@ -14,7 +14,7 @@ const Feed = ({home,bgColorr}) => {
  }, []);
 
   return (
-<main className={`flex flex-col flex-1 sm:overflow-auto px-10 sm:py-10 pb-10 z-20`}>
+<main className={`flex flex-col flex-1 sm:overflow-auto sm:px-5 px-10 sm:py-10 pb-10 z-20`}>
 
   <div className='homeContainer w-full '>
       <div key={homes.id} className='rounded-lg p-5 flex flex-col justify-evenly mb-10 drop-shadow-lg break-all' style={{backgroundColor:bgColorr}}>
@@ -50,7 +50,7 @@ const Feed = ({home,bgColorr}) => {
           null
         )}
 
-        <div className='imgContainer'>
+        <div className='imgContainer flex items-center justify-center'>
             <img src={`${homes.img}`} alt="img" />
           </div>
       </div>
