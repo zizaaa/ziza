@@ -4,7 +4,7 @@ import './styles/feed.css';
 import { MdDateRange } from 'react-icons/md'
 import { useParams,Link} from 'react-router-dom'
 
-const Feed = ({home,bgColorr}) => {
+const Feed = ({home,bgColorr,themeColor}) => {
 
   const {id} = useParams();
   const homes = home.find(item => (item.id) == id);
@@ -14,7 +14,7 @@ const Feed = ({home,bgColorr}) => {
  }, []);
 
   return (
-<main className={`flex flex-col flex-1 sm:overflow-auto sm:px-5 px-10 py-10 z-20`}>
+<main className={`flex flex-col flex-1 sm:overflow-auto sm:px-5 px-10 py-10 z-20`}  style={{backgroundColor:themeColor}}>
   <div className='homeContainer w-full '>
       <div key={homes.id} className='rounded-lg p-5 flex flex-col justify-evenly mb-10 drop-shadow-lg break-all' style={{backgroundColor:bgColorr}}>
           

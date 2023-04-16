@@ -18,7 +18,7 @@ const Nav = ({theme,themeToggler,bgColorr}) => {
 
     const handleOpen=()=>{
         setOpener(()=>opener ? "" : "open");
-        setNum(()=> num ? 0 : '260px');
+        setNum(()=> num ? 0 : '290px');
     }
 
 
@@ -73,7 +73,7 @@ const Nav = ({theme,themeToggler,bgColorr}) => {
             <span className='hamburger-bottom'></span>
         </button>
         </div>
-        <div className={`flex-col overflow-hidden  text-lg drop-shadow-lg mt-6 p-5 gap-3 flex absolute left-0 right-0 top-[325px] sm:hidden`} style={{backgroundColor:bgColorr}}>
+        <div className={`flex-col overflow-hidden  text-lg drop-shadow-lg mt-6 p-5 gap-3 flex absolute left-0 right-0 top-[345px] sm:hidden`} style={{backgroundColor:bgColorr}}>
         
         <Link to='/' className='flex items-center'><span className='mr-5'><AiOutlineHome /></span> Home</Link>
             <Link to='/about' className='flex items-center'><span className='mr-5'><AiOutlineUser /></span> About</Link>
