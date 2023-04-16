@@ -20,7 +20,7 @@ function App() {
       date:"January 13,2023",
       time:"11:39 PM",
       id: 1,
-      img:'./src/Img/Capstonegen.png',
+      img:'./src/Assets/Capstonegen.png',
       link:'https://zizaaa.github.io/Title-Capstone-Generator/',
       repo:'https://github.com/zizaaa/Title-Capstone-Generator'
     },
@@ -31,7 +31,7 @@ function App() {
       date:"January 13,2023",
       time:"11:24 PM",
       id: 2,
-      img:'./src/Img/Freedomwall.png',
+      img:'./src/Assets/Freedomwall.png',
       link:'https://zizaaa.github.io/Freedom-Wall/',
       repo:'https://github.com/zizaaa/Freedom-Wall'
     },
@@ -42,7 +42,7 @@ function App() {
       date:"December 3-4,2022",
       time:"9:00 AM",
       id: 3,
-      img:'./src/img/bootcampcert.jpg',
+      img:'./src/Assets/bootcampcert.jpg',
       link:'',
       repo:''
     },
@@ -53,7 +53,7 @@ function App() {
       date:"April 13,2023",
       time:"",
       id: 4,
-      img:'./src/Img/Networkingcert.png',
+      img:'./src/Assets/Networkingcert.png',
       link:'',
       repo:''
     },
@@ -64,7 +64,7 @@ function App() {
       date:"October 19,2022",
       time:"",
       id: 5,
-      img:'./src/Img/Jscert.png',
+      img:'./src/Assets/Jscert.png',
       link:'',
       repo:''
     }
