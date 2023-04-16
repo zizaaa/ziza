@@ -49,5 +49,16 @@
   .menu{
     /* height: 310px; */
     padding: 0;
-    transition: padding .2s linear;
+    transition: padding .1s linear;
+  }
+
+  .arrow{
+    position: absolute;
+    top: 0;
+    transform: translateX(-25px);
+    transition: all .2s ease-in-out;
+  }
+
+  .arrowShow{
+    transform: translateX(10px);
   }

@@ -14,8 +14,7 @@ const Feed = ({home,bgColorr}) => {
  }, []);
 
   return (
-<main className={`flex flex-col flex-1 sm:overflow-auto sm:px-5 px-10 sm:py-10 pb-10 z-20`}>
-
+<main className={`flex flex-col flex-1 sm:overflow-auto sm:px-5 px-10 py-10 z-20`}>
   <div className='homeContainer w-full '>
       <div key={homes.id} className='rounded-lg p-5 flex flex-col justify-evenly mb-10 drop-shadow-lg break-all' style={{backgroundColor:bgColorr}}>
           

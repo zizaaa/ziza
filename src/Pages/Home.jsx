@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { SiJavascript,SiReact,SiTailwindcss,SiNodedotjs,SiHtml5,SiCss3,SiMongodb,SiExpress } from 'react-icons/si';
 import { useEffect } from 'react';
+import { MdDateRange } from 'react-icons/md';
 
 const Home = ({home,bgColorr,themeColor}) => {
   
@@ -10,8 +11,8 @@ const Home = ({home,bgColorr,themeColor}) => {
  }, []);
 
   return (
-    <main className='flex flex-1 sm:overflow-auto sm:px-3 px-10 sm:py-10 pb-10 z-20' style={{backgroundColor:themeColor}}>
-      <div className='homeContainer md:w-2/3 w-full'>
+    <main className='flex sm:flex-1 sm:px-3 px-10 py-10 pb-10 z-20' style={{backgroundColor:themeColor}}>
+      <div className='homeContainer md:w-2/3 w-full sm:overflow-auto'>
         {home.map((item)=> (
           <Link to={`${item.id}`} key={item.id} className='rounded-lg min-h-[130px] p-5 flex flex-col justify-evenly mb-10 drop-shadow-lg overflow-hidden' style={{backgroundColor:bgColorr}}>
           
@@ -30,7 +31,8 @@ const Home = ({home,bgColorr,themeColor}) => {
                 <p className={`mr-3 px-3 rounded-full bg-[${themeColor}]`}>#{item.category}</p>
               </div>
 
-              <div className='flex'>
+              <div className='flex items-center'>
+                <MdDateRange/>
                 <p className='mr-3'>{item.date}</p>
                 <p>{item.time}</p>
               </div>
@@ -38,11 +40,13 @@ const Home = ({home,bgColorr,themeColor}) => {
 
           </Link>
         ))}
+
         <div className={`w-24 h-0 border-solid border-2 border-[${bgColorr}] my-16`}></div>
         <footer>
             <p className='font-semibold'>&copy; 2022 - 2023 Ziza</p>
         </footer>
       </div>
+
       <div className='rightSideContainer md:flex flex-col pl-10 justify-between hidden'>
               <div>
                 <div className='title'>
