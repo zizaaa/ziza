@@ -24,7 +24,7 @@ const Nav = ({theme,themeToggler,bgColorr}) => {
     <nav className=' relative pt-10 pb-5 pl-10 sm:pr-0 pr-10  flex flex-col justify-between sm:w-72 w-full'>
         <div className={`sm:pb-[0px] menu`} style={{paddingBottom:num}}>
             <div className='imgContainer'>
-                <img src="/src/Assets/Profile4.png" alt="profile" className='drop-shadow-xl'/>
+                <img src="../src/Assets/Profile4.png" alt="profile" className='drop-shadow-xl'/>
             </div>
             <div className='textContainer mb-5'>
                 <p className='text-md mb-3 font-bold tracking-widest'>ziza</p>
