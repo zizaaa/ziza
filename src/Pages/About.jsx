@@ -1,8 +1,13 @@
 import React from 'react'
 import { FiMail,FiGithub } from 'react-icons/fi'
 import { MdDateRange } from 'react-icons/md'
+import { useEffect } from 'react'
 
 const About = ({bgColorr,themeColor}) => {
+  useEffect(() => {
+    document.title = "ziza - About"
+  }, []);
+
   return (
     <main className='flex flex-col flex-1 sm:overflow-auto sm:px-5 px-3 sm:py-10 pb-10 z-10' style={{backgroundColor:themeColor}}>
       <div className='w-full p-10 drop-shadow-lg rounded-lg' style={{backgroundColor:bgColorr}}>

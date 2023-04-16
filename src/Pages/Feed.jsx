@@ -14,10 +14,10 @@ const Feed = ({home,bgColorr,themeColor}) => {
  }, []);
 
   return (
-<main className={`flex flex-col flex-1 sm:overflow-auto sm:px-0 px-3 py-10 z-20`}  style={{backgroundColor:themeColor}}>
+<main className={`flex flex-col flex-1 sm:overflow-auto sm:px-2 px-3 py-10 z-20`}  style={{backgroundColor:themeColor}}>
   <div className='homeContainer w-full '>
       <div key={homes.id} className='rounded-lg p-5 flex flex-col justify-evenly mb-10 drop-shadow-lg break-all' style={{backgroundColor:bgColorr}}>
-          
+      
         <div className='title mb-10'>
           <h2 className='text-[50px]'>{homes.title}</h2>
           <div className='flex mt-3'>

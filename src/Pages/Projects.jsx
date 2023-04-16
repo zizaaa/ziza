@@ -1,13 +1,26 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react' 
+import { SiJavascript,SiReact,SiTailwindcss,SiNodedotjs,SiHtml5,SiCss3,SiMongodb,SiExpress } from 'react-icons/si';
+import { HiArrowLongRight } from 'react-icons/hi2';
 
 const Projects = ({home,themeColor,bgColorr}) => {
+    useEffect(() => {
+      document.title = "ziza - Projects"
+    }, []);
+
   return (
-    <main className='flex flex-1 sm:overflow-auto px-10 sm:py-10 pb-10 z-20' style={{backgroundColor:themeColor}}>
-      <div className='homeContainer md:w-2/3 w-full'>
+    <main className='flex flex-1 sm:overflow-auto px-2 sm:py-10 pb-10 z-20' style={{backgroundColor:themeColor}}>
+      <div className='homeContainer w-full'>
+      <div>
+        <h1 className='font-semibold mb-1 pl-2'>CATEGORIES</h1>
+        <div className='rounded-lg min-h-[50px] sm:mr-2 p-5 mb-10 drop-shadow-lg' style={{backgroundColor:bgColorr}}>
+          <h2 className='text-lg uppercase font-semibold'>Projects</h2>
+        </div>
+      </div>
         {home.map((item)=>(
           item.category === "projects" ? (
-            <Link to={`/${item.id}`} key={item.id} className='rounded-lg min-h-[130px] p-5 flex flex-col justify-evenly mb-10 drop-shadow-lg' style={{backgroundColor:bgColorr}}>
+            <Link to={`/${item.id}`} key={item.id} className='p-5 flex flex-col mb-1 sm:mr-2 drop-shadow-lg' style={{backgroundColor:bgColorr}}>
           
           <div className='title text-2xl mb-3'>
             <h2>{item.title}</h2>
@@ -15,7 +28,7 @@ const Projects = ({home,themeColor,bgColorr}) => {
 
           <div>
               <p>
-                {(item.description).length <= 100 ? item.description : `${(item.description).slice(0,100)}...`}
+                {(item.description).length <= 200 ? item.description : `${(item.description).slice(0,200)}...`}
               </p>
           </div>
 

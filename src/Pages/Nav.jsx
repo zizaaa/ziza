@@ -21,8 +21,7 @@ const Nav = ({theme,themeToggler,bgColorr}) => {
         setNum(()=> num ? 0 : '290px');
     }
 
-
-  return (
+return (
     <nav className=' relative pt-10 pb-5 sm:pl-10 pl-3 sm:pr-0 pr-3  flex flex-col justify-between sm:w-72 w-full'>
         <div className='menu' style={{paddingBottom:num}}>
             <div className='imgContainer sm:mb-5'>

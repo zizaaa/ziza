@@ -55,8 +55,8 @@ function App() {
       repo:''
     },
     {
-      title: "Cisco Networking Award",
-      description:"",
+      title: "CCNAv7: Introduction to Networks",
+      description:"Cisco Certificate",
       category:"achivements",
       date:"April 13,2023",
       time:"",
@@ -68,7 +68,7 @@ function App() {
     },
     {
       title: "Cisco Javascript Essentials",
-      description:"",
+      description:"Javascript Essentials Certificate",
       category:"achivements",
       date:"October 19,2022",
       time:"",
@@ -133,7 +133,6 @@ function App() {
     bgColorr="rgb(66,66,66)"
     themeColor = "rgb(48,48,48)"
   }
-
 
 
   return (
