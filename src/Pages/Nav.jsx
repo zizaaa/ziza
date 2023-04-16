@@ -75,14 +75,14 @@ const Nav = ({theme,themeToggler,bgColorr}) => {
         </div>
         <div className={`flex-col overflow-hidden  text-lg drop-shadow-lg mt-6 p-5 gap-3 flex absolute left-0 right-0 top-[345px] sm:hidden`} style={{backgroundColor:bgColorr}}>
         
-        <Link to='/' className='flex items-center'><span className='mr-5'><AiOutlineHome /></span> Home</Link>
-            <Link to='/about' className='flex items-center'><span className='mr-5'><AiOutlineUser /></span> About</Link>
+        <Link to='/' onClick={handleOpen} className='flex items-center'><span className='mr-5'><AiOutlineHome /></span> Home</Link>
+            <Link to='/about' onClick={handleOpen} className='flex items-center'><span className='mr-5'><AiOutlineUser /></span> About</Link>
 
-            <Link to='/achivements' className='flex items-center'><span className='mr-5'><BiMedal /></span> Achivements</Link>
+            <Link to='/achivements' onClick={handleOpen} className='flex items-center'><span className='mr-5'><BiMedal /></span> Achivements</Link>
 
-            <Link to='/projects' className='flex items-center'><span className='mr-5'><AiOutlineProject /></span> Projects</Link>
+            <Link to='/projects' onClick={handleOpen} className='flex items-center'><span className='mr-5'><AiOutlineProject /></span> Projects</Link>
 
-            <Link to='/links' className='flex items-center'><span  className='mr-5'><BsLink45Deg /></span> Links</Link>
+            <Link to='/links' onClick={handleOpen} className='flex items-center'><span  className='mr-5'><BsLink45Deg /></span> Links</Link>
 
 
             <button className='flex items-center' onClick={themeToggler}>
