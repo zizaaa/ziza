@@ -34,20 +34,20 @@ return (
             <div className='socialContainer flex gap-5 text-lg sm:mb-5'>
                 <a href="https://github.com/zizaaa"><FiGithub/></a>
                 <a href="https://www.facebook.com/jyrnv"><FiFacebook/></a>
-                <a href="#"><TbBrandDiscord/></a>
+                <a href="https://discord.gg/TUWt9GQpXP"><TbBrandDiscord/></a>
                 <a href="#"><TfiTwitter/></a>
             </div>
 
         <div className=' sm:flex flex-col hidden mb-10 gap-5 text-'>
-            <Link to='/' className='flex items-center'><span className='mr-5'><AiOutlineHome /></span> Home<span className='par relative h-5 w-10 overflow-hidden'><HiArrowLongRight className={`arrow text-2xl `}/></span></Link>
+            <Link to='/' className='link flex items-center'><span className='mr-5'><AiOutlineHome /></span> Home<span className='par relative h-5 w-10 overflow-hidden'><HiArrowLongRight className={`arrow arrowShow text-2xl `}/></span></Link>
 
-            <Link to='/about' className='flex items-center'><span className='mr-5'><AiOutlineUser /></span>About <span className='par relative h-5 w-10 overflow-hidden'><HiArrowLongRight className={`arrow  text-2xl`}/></span></Link>
+            <Link to='/about' className='link flex items-center'><span className='mr-5'><AiOutlineUser /></span>About <span className='par relative h-5 w-10 overflow-hidden'><HiArrowLongRight className={`arrow arrowShow  text-2xl`}/></span></Link>
 
-            <Link to='/achivements' className='flex items-center'><span className='mr-5'><BiMedal /></span> Achivements<span className='par relative h-5 w-10 overflow-hidden'><HiArrowLongRight className={`arrow text-2xl `}/></span></Link>
+            <Link to='/achivements' className='link flex items-center'><span className='mr-5'><BiMedal /></span> Achivements<span className='par relative h-5 w-10 overflow-hidden'><HiArrowLongRight className={`arrow arrowShow text-2xl `}/></span></Link>
 
-            <Link to='/projects'  className='flex items-center'><span className='mr-5'><AiOutlineProject /></span>Projects<span className='par relative h-5 w-10 overflow-hidden'><HiArrowLongRight className={`arrow text-2xl `}/></span></Link>
+            <Link to='/projects'  className='link flex items-center'><span className='mr-5'><AiOutlineProject /></span>Projects<span className='par relative h-5 w-10 overflow-hidden'><HiArrowLongRight className={`arrow arrowShow text-2xl `}/></span></Link>
 
-            <Link to='/links'  className='flex items-center'><span  className='mr-5'><BsLink45Deg /></span>Links<span className='par relative h-5 w-10 overflow-hidden'><HiArrowLongRight className={`arrow text-2xl `}/></span></Link>
+            <Link to='/links' className='link flex items-center'><span  className='mr-5'><BsLink45Deg /></span>Links<span className='par relative h-5 w-10 overflow-hidden'><HiArrowLongRight className={`arrow arrowShow text-2xl `}/></span></Link>
         </div>
 
         <div>
