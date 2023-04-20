@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { SiJavascript,SiReact,SiTailwindcss,SiNodedotjs,SiHtml5,SiCss3,SiMongodb,SiExpress } from 'react-icons/si';
 import { useEffect } from 'react';
 import { MdDateRange } from 'react-icons/md';
-import { HiArrowLongRight } from 'react-icons/hi2';
+import { HiArrowLongRight,HiOutlineHashtag,HiSquare3Stack3D } from 'react-icons/hi2';
+import { GiSkills } from 'react-icons/gi'
 
 const Home = ({home,bgColorr,themeColor}) => {
   
@@ -51,16 +52,16 @@ const Home = ({home,bgColorr,themeColor}) => {
       <div className='rightSideContainer md:flex flex-col pl-10 justify-between hidden'>
               <div>
                 <div className='title'>
-                    <h2 className='uppercase font-semibold mb-5'>Categories</h2>
+                    <h2 className='uppercase font-semibold mb-5'><HiOutlineHashtag className='text-2xl'/> Categories</h2>
                 </div>
                   <div className='flex gap-3 flex-wrap'>
                     <Link to="/projects" className={`px-3 rounded-full drop-shadow-md`} style={{backgroundColor:bgColorr}}>#Projects</Link>
                     <Link to="/achivements" className={`px-3 rounded-full drop-shadow-md`} style={{backgroundColor:bgColorr}}>#Achievements</Link>
                   </div>
-                </div>
+              </div>
               <div>
                 <div className='title'>
-                  <h2 className='uppercase font-semibold mb-5'>Key Skills</h2>
+                  <h2 className='uppercase font-semibold mb-5'><GiSkills className='text-2xl'/>Key Skills</h2>
                 </div>
                   <ul className='flex flex-col gap-3 cursor-pointer'>
                     <li className='flex items-center'>
@@ -87,7 +88,7 @@ const Home = ({home,bgColorr,themeColor}) => {
               </div>
               <div className='technology'>
               <div className='title'>
-                <h2 className='uppercase font-semibold mb-5'>Tech Stack</h2>
+                <h2 className='uppercase font-semibold mb-5'><HiSquare3Stack3D className='text-2xl'/>Tech Stack</h2>
               </div>
               <div className='flex flex-wrap gap-3 text-xl'>
                 <SiJavascript/>

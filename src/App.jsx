@@ -5,8 +5,6 @@ import About from "./Pages/About";
 import Achivements from "./Pages/Achivements";
 import Links from "./Pages/Links";
 import Projects from "./Pages/Projects";
-// import Resume from "./Pages/Resume";
-// import Contact from "./Pages/Contact";
 import Feed from "./Pages/Feed";
 import Missing from "./Pages/Missing";
 import { useState } from "react";
@@ -28,7 +26,8 @@ function App() {
       img:`${capstoneLogo}`,
       // ./src/Assets/Capstonegen.png
       link:'https://zizaaa.github.io/Title-Capstone-Generator/',
-      repo:'https://github.com/zizaaa/Title-Capstone-Generator'
+      repo:'https://github.com/zizaaa/Title-Capstone-Generator',
+      tags:['javascript','css','html']
     },
     {
       title: "Freedom Wall Online",
@@ -40,7 +39,8 @@ function App() {
       img:`${freedomWallLogo}`,
       // './src/Assets/Freedomwall.png'
       link:'https://zizaaa.github.io/Freedom-Wall/',
-      repo:'https://github.com/zizaaa/Freedom-Wall'
+      repo:'https://github.com/zizaaa/Freedom-Wall',
+      tags:['javascript','css','html']
     },
     {
       title: "Regional Start Up Bootcamp",
