@@ -16,7 +16,7 @@ const Home = ({home,bgColorr,themeColor}) => {
     <main className='flex sm:flex-1 sm:px-3 px-2 py-10 pb-10 z-20' style={{backgroundColor:themeColor}}>
       <div className='homeContainer md:w-2/3 w-full sm:overflow-auto'>
         {home.map((item)=> (
-          <Link to={`${item.id}`} key={item.id} className='rounded-lg min-h-[130px] p-5 flex flex-col justify-evenly mb-10 sm:mr-2 drop-shadow-lg overflow-hidden' style={{backgroundColor:bgColorr}}>
+          <div key={item.id} className='rounded-lg min-h-[130px] p-5 flex flex-col justify-evenly mb-10 sm:mr-2 drop-shadow-lg overflow-hidden' style={{backgroundColor:bgColorr}}>
           
             <div className='title text-2xl mb-3'>
               <h2>{item.title}</h2>
@@ -25,6 +25,8 @@ const Home = ({home,bgColorr,themeColor}) => {
             <div>
               <p>
                 {(item.description).length <= 100 ? item.description : `${(item.description).slice(0,100)}...`}
+                
+                <Link to={`${item.id}`}className='link relative ml-2'>View more<span className='linkText'></span></Link>
               </p>
             </div>
 
@@ -40,7 +42,7 @@ const Home = ({home,bgColorr,themeColor}) => {
               </div>
             </div>
 
-          </Link>
+          </div>
         ))}
 
         <div className={`w-24 h-0 border-solid border-2 border-[${bgColorr}] my-16`}></div>
@@ -97,8 +99,8 @@ const Home = ({home,bgColorr,themeColor}) => {
                 <SiNodedotjs/>
                 <SiHtml5/>
                 <SiCss3/>
-                <SiMongodb/>
-                <SiExpress/>
+                {/* <SiMongodb/>
+                <SiExpress/> */}
               </div>
             </div>
       </div>

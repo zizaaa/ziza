@@ -22,7 +22,7 @@ const Achivements = ({home,themeColor,bgColorr}) => {
       
       {home.map((item)=>(
         item.category === "achivements" ? (
-          <Link to={`/${item.id}`} key={item.id} className='p-5 flex flex-col mb-1 drop-shadow-lg' style={{backgroundColor:bgColorr}}>
+          <div key={item.id} className='p-5 flex flex-col mb-1 drop-shadow-lg' style={{backgroundColor:bgColorr}}>
         
         <div className='title text-2xl mb-3'>
           <h2>{item.title}</h2>
@@ -31,6 +31,7 @@ const Achivements = ({home,themeColor,bgColorr}) => {
         <div>
             <p>
               {(item.description).length <= 200 ? item.description : `${(item.description).slice(0,200)}...`}
+              <Link to={`/${item.id}`}className='link relative ml-2'>View more<span className='linkText'></span></Link>
             </p>
         </div>
 
@@ -45,7 +46,7 @@ const Achivements = ({home,themeColor,bgColorr}) => {
           </div>
         </div>
 
-      </Link>
+      </div>
         ):(null)
       ))}
       <div className='w-24 h-0 border-solid border-2 border-white my-16'></div>
