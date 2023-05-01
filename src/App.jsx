@@ -7,7 +7,7 @@ import Links from "./Pages/Links";
 import Projects from "./Pages/Projects";
 import Feed from "./Pages/Feed";
 import Missing from "./Pages/Missing";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import capstoneLogo from '/src/Assets/Capstonegen.png';
 import freedomWallLogo from '/src/Assets/Freedomwall.png';
 import bootCampCert from '/src/Assets/bootcampcert.jpg';
@@ -120,18 +120,23 @@ function App() {
   const [theme, setTheme] = useState(false);
 
   const themeToggler =()=>{
-      setTheme(()=> theme ? (false) : (true));
+    setTheme(()=> theme ? (false) : (true));
   }
+
+  // useEffect(()=>{
+  //   setTheme(()=> theme ? (localStorage.setItem('theme', 'false')) : localStorage.setItem('theme', 'true'));
+  // },setTheme);
+
   if(theme){
     textColor = "rgb(82,100,119)";
     bgColor = "rgb(245,245,250)";
-    bgColorr="rgb(245,245,250)"
-    themeColor = "rgb(245,245,250)"
+    bgColorr="rgb(245,245,250)";
+    themeColor = "rgb(245,245,250)";
   }else{
     textColor = "rgb(195,195,195)";
     bgColor = "rgb(48,48,48)";
-    bgColorr="rgb(66,66,66)"
-    themeColor = "rgb(48,48,48)"
+    bgColorr="rgb(66,66,66)";
+    themeColor = "rgb(48,48,48)";
   }
 
 
