@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { SiJavascript,SiReact,SiTailwindcss,SiNodedotjs,SiHtml5,SiCss3,SiMongodb,SiExpress } from 'react-icons/si';
+import { FaBootstrap } from 'react-icons/fa'
 import { useEffect } from 'react';
 import { MdDateRange } from 'react-icons/md';
 import { HiArrowLongRight,HiOutlineHashtag,HiSquare3Stack3D } from 'react-icons/hi2';
@@ -93,14 +94,16 @@ const Home = ({home,bgColorr,themeColor}) => {
                 <h2 className='uppercase font-semibold mb-5'><HiSquare3Stack3D className='text-2xl'/>Tech Stack</h2>
               </div>
               <div className='flex flex-wrap gap-3 text-xl'>
-                <SiJavascript/>
-                <SiReact/>
-                <SiTailwindcss/>
-                <SiNodedotjs/>
                 <SiHtml5/>
                 <SiCss3/>
-                {/* <SiMongodb/>
-                <SiExpress/> */}
+                <FaBootstrap/>
+                <SiTailwindcss/>
+                <SiJavascript/>
+                <SiReact/>
+                <SiNodedotjs/>
+                {/* <SiMongodb/> */}
+                <SiExpress/>
+                
               </div>
             </div>
       </div>
